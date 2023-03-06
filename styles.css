@@ -3,13 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: system-ui, sans-serif;
   color: black;
   background-color: white;
 }
-
 header{
   position: fixed;
   z-index: 999;
@@ -17,7 +15,6 @@ header{
   height: 65px;
   line-height: 65px;
   background-color: crimson;
-
 }
 .header-wrapper{
   position: relative;
@@ -57,12 +54,10 @@ header{
 }
 .navigation li:hover .drop-menu,
 .navigation li:hover .mega-box{
-
   top: 65px;
   visibility: visible;
   opacity: 1;
   transition: all 0.3s ease;
-
 }
 .navigation .drop-menu li a{
   display: block;
@@ -108,14 +103,76 @@ header{
   margin-left: -40px;
   border-left: 1px solid #f2f2f2;
 }
-
 .mega-link li{
   padding: 0px 10px;
-
 }
 .mega-link li a{
-  /* padding: 0px 10px; */
   color: #d9d9d9;
   font-size: 17px;
   display: block;
+}
+
+
+/* select option  */
+.select-option-menu{
+  background-color:#000;
+  width: 100%;
+  height: 90vh;
+}
+.select-menu{
+  position: absolute;
+  width: 380px;
+  margin: 90px 120px;
+  padding: 20px;
+}
+.select-menu .select-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  padding: 20px;
+  background-color: #fff;
+  color: #000;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0px 0px 0px rgba(0,0,0, 0.1);
+}
+.select-btn i{
+  font-size: 22px;
+  transition: 0.3s;
+}
+.select-menu.active .select-btn i{
+  transform: rotate(-180deg);
+}
+.select-menu .options{
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  display: none;
+}
+.select-menu.active .options{
+   display: block;
+}
+
+.options .option{
+  display: flex;
+  height: 45px;
+  align-items: center;
+  padding: 10px 16px;
+  background: #fff;
+}
+.options .option:hover{
+  background-color: #f2f2f2f2;
+}
+.options .option i{
+  font-size: 18px;
+  margin-right: 12px;
+}
+.options .option span{
+  color: #333;
+  font-size: 19px;
 }
