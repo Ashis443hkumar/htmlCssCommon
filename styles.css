@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+}
+
+header{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 65px;
+  line-height: 65px;
+  background-color: crimson;
+
+}
+.header-wrapper{
+  position: relative;
+  max-width: 1244px;
+  margin: auto;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  color: #f2f2f2;
+}
+.navigation ul li {
+  display: inline-block;
+}
+.navigation ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-style: 16px;
+  font-weight: 600;
+  padding: 10px 14px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+.navigation ul li a:hover{
+  background-color: #3a3b3c;
+}
+.navigation .drop-menu{
+  background-color: #212324;
+  width: 180px;
+  position: absolute;
+  top: 85px;
+  line-height: 45px;
+  visibility: hidden;
+  opacity: 0;
+}
+.navigation li:hover .drop-menu,
+.navigation li:hover .mega-box{
+
+  top: 65px;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease;
+
+}
+.navigation .drop-menu li a{
+  display: block;
+  width: 100%;
+  padding: 0px 0px 0px 15px;
+  font-weight: 500;
+}
+/* second dropdown menu  */
+.mega-box{
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  left: 0%;
+  visibility: hidden;
+  opacity: 1;
+}
+.mega-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  padding: 0px 30px;
+  width: 100%;
+  background-color: #212324;
+}
+.mega-content .row{
+  width: calc(25% - 30px);
+  line-height: 45px;
+  padding: 40px  20px 30px;
+}
+.mega-content .row img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mega-content .row h4{
+  color: red;
+  font-size: 19px;
+  font-weight: 600;
+}
+.mega-content .row .mega-link{
+  margin-top: 20px;
+  margin-left: -40px;
+  border-left: 1px solid #f2f2f2;
+}
+
+.mega-link li{
+  padding: 0px 10px;
+
+}
+.mega-link li a{
+  /* padding: 0px 10px; */
+  color: #d9d9d9;
+  font-size: 17px;
+  display: block;
+}
